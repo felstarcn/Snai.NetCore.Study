@@ -1,12 +1,10 @@
-CREATE DATABASE alan CHARACTER SET utf8 COLLATE utf8_general_ci
-;
+CREATE DATABASE alan CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-USE alan
-;
+USE alan;
 
 CREATE TABLE student(
 	id INT AUTO_INCREMENT PRIMARY KEY,			-- 自增列需为主键
-	`name` NVARCHAR(32) NOT NULL DEFAULT '',
+	name NVARCHAR(32) NOT NULL DEFAULT '',
 	sex TINYINT NOT NULL DEFAULT 1,				-- 0 男生，1 女生，2 保密
 	age INT NOT NULL DEFAULT 0
 )
